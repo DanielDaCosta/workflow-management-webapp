@@ -133,13 +133,13 @@ You can also find a folder `notebooks` which was used for testing.
 
 # Improvements
 
-Just like any software code, there is always room for improvement. Due to time constraints, there are several potential enhancements that could be made:
+Just like any software code, there is always room for improvement. Due to time constraints, several potential enhancements could be made:
 
 - **URL Validation**: Currently, the system assumes that users will provide valid URLs. An improvement would be to implement URL validation to ensure correctness. Additionally, the project could be expanded to handle more diverse input types, such as YouTube transcripts. For example, users could upload a YouTube link, and the AI could extract the transcript and provide responses based on this context.
 
 - **Data Preprocessing**: Another important improvement would be to chunk and store the data beforehand, rather than performing these operations only during the 'Run' execution of the workflow. This change could enhance performance significantly. However, since the current process takes approximately 3 seconds to chunk and return data via the LLM, this approach was deemed acceptable for this assignment.
 
-- **Data Loading and Filtering**: For loading data, I used LangChain's `WebBaseLoader`, which works well for many websites. However, it may return excessive or irrelevant text (e.g., image captions, footnotes) when dealing with complex websites that contain numerous HTML tags and images. An improvement would be to filter the text to include only specific tags, such as `<p>` tags. This approach would need to be tested to ensure it works across a variety of websites and minimizes the inclusion of unnecessary content.
+- **Data Loading and Filtering**: I used LangChain's `WebBaseLoader` for loading data, which works well for many websites. However, it may return excessive or irrelevant text (e.g., image captions, footnotes) when dealing with complex websites that contain numerous HTML tags and images. An improvement would be to filter the text to include only specific tags, such as `<p>` tags. This approach would need to be tested to ensure it works across a variety of websites and minimizes the inclusion of unnecessary content.
 
 # Screenshots
 
