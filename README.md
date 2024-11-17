@@ -64,7 +64,7 @@ npm start
 
 ## Frontend
 
-The frontend of the application is built with React and TypeScript. It features several components designed to manage workflows through a variety of actions such as creation, execution, and deletion. Each workflow is defined by the following TypeScript type:
+The frontend of the application is built with React and TypeScript. It features several components designed to manage workflows through various actions such as creation, execution, and deletion. The following TypeScript type defines each workflow:
 
 ```typescript
 type Workflow = {
